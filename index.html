@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>JS Drum Kit</title>
-  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -56,6 +56,7 @@
   <audio data-key="74" src="assets/sounds/snare.wav"></audio>
   <audio data-key="75" src="assets/sounds/tom.wav"></audio>
   <audio data-key="76" src="assets/sounds/tink.wav"></audio>
+  </body>
   <script>
   function removeTransition(e) {
     if (e.propertyName !== 'transform') return;
@@ -73,5 +74,5 @@
   keys.forEach(key => key.addEventListener('transitionend', removeTransition));
   window.addEventListener('keydown', playSound);
 </script>
-</body>
+
 </html>
